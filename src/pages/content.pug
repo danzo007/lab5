@@ -1,10 +1,26 @@
 main
-    div.serch
-        div.filter
-            p Filters
-        div.serch-input
-            input(type='text', placeholder='Search')
-    div.games
-        img(src="public/Image/balatro.png", alt="balatro")
-        img(src="public/Image/eldenRing.png", alt="Elden ring")
-        img(src="public/Image/poe2.png", alt="path of exile 2")
+  button#toggleFiltersBtn(type='button') Filters
+  div.filter-controls#filterContainer(style='display: none;')
+    select#genreSelect
+      option(value='') All Genres
+      option(value='Adventure') Adventure
+      option(value='RPG') RPG
+      option(value='Action') Action
+    select#devSelect
+      option(value='') All Developers
+      option(value='Play Stack') Play Stack
+      option(value='FromSoftware') FromSoftware
+      option(value='Grinding Gear Games') Grinding Gear Games
+      option(value='Valve') Valve
+    label
+      input#coopCheckbox(type='checkbox')
+      | Coop
+    label
+      input#notCoopCheckbox(type='checkbox')
+      | Not Coop
+    input#serch-input(type='text', placeholder='Search')
+  
+  div.games
+    img(src="public/Image/balatro.png", alt="balatro")
+    img(src="public/Image/eldenRing.png", alt="Elden ring")
+    img(src="public/Image/poe2.png", alt="path of exile 2")

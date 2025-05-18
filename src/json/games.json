@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Balatro",
+    "image": "public/Image/balatro.png",
+    "alt": "balatro",
+    "genre": "Roguelike",
+    "developer": "Play Stack",
+    "coop": false
+  },
+  {
+    "name": "Elden Ring",
+    "image": "public/Image/eldenRing.png",
+    "alt": "Elden ring",
+    "genre": "RPG",
+    "developer": "FromSoftware",
+    "coop": false
+  },
+  {
+    "name": "Path of Exile 2",
+    "image": "public/Image/poe2.png",
+    "alt": "path of exile 2",
+    "genre": "Action",
+    "developer": "Grinding Gear Games",
+    "coop": true
+  },
+  {
+    "name": "Path of Exile",
+    "image": "public/Image/poe.png",
+    "alt": "path of exile",
+    "genre": "Action",
+    "developer": "Grinding Gear Games",
+    "coop": true
+  },
+  {
+    "name": "Dota 2",
+    "image": "public/Image/dota2.png",
+    "alt": "dota 2",
+    "genre": "Action",
+    "developer": "Valve",
+    "coop": true
+  },
+  {
+    "name": "Counter-Strike: Global Offensive",
+    "image": "public/Image/csgo.png",
+    "alt": "csgo",
+    "genre": "Action",
+    "developer": "Valve",
+    "coop": true
+  },
+  {
+    "name": "Overwatch",
+    "image": "public/Image/overwatch.png",
+    "alt": "overwatch",
+    "genre": "Action",
+    "developer": "Blizzard",
+    "coop": true
+  }
+]

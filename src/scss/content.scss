@@ -24,32 +24,30 @@ content{
     }
   }
 
-  .serch-input {
+  #serch-input {
     margin-left: auto;
     margin-right: 10px;
-    @media all and (max-width: 768px) {
-        margin-right: 0px;
-    }
-  }
-  .serch-input input {
     @include font-size(1rem);
     background-color: #2B475E;
     color: #1C2838;
     width: 320px;
     height: 50px;
     @media all and (max-width: 768px) {
+        margin-right: 0px;
         width: 200px;
         height: 30px;
     }
   }
+
   .serch-input input::placeholder {
     color: #1C2838;
   }
   .games {
+    margin-top: 20px;
     align-items: center;
     flex-direction: column;
     display: flex;
-    gap: 10px;
+    gap: 20px;
     
   }
   .games img {
@@ -61,3 +59,38 @@ content{
         height: 50px;
     }
   }
+  #toggleFiltersBtn {
+  @include glow-on-hover;
+  @include font-size(1rem);
+  padding: 10px 20px;
+  background-color: #2B475E;
+  color: #1C2838;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+
+select {
+  padding: 8px 12px;
+  @include font-size(1rem);
+  background-color: #2B475E;
+  color: #1C2838;
+  border: 1px solid #1C2838;
+  border-radius: 4px;
+  @media all and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+#filterContainer {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: 0, 0, 0, 0;
+  padding: 0 20px;
+  @media all and (max-width: 768px) {
+    flex-direction: column;
+  }
+}

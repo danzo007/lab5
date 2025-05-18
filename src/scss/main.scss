@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+@import url("reset.scss");
+@import "header.scss";
+@import "content.scss";
+@import "footer.scss";
+$font-size: 2rem;
+$font-color: #66C0F4;
+$body-color: #161A21;
+$font-family: "Jaro", sans-serif;
+$font-weight: 400;
+$header-height: 700px;
+$main-height: 700px;
+$footer-height: 200px;
+
+html {
+  font-family: $font-family;
+  font-optical-sizing: auto;
+  font-weight: $font-weight;
+  font-style: normal;
+  font-size: $font-size;
+  color: $font-color;
+  background-color: $body-color;
+}
+
+header{
+    height: $header-height;
+    @media all and (max-width: 768px) {
+        height: 400px;
+    }
+}
+content{
+    height: $main-height;
+}
+
+footer{
+    height: $footer-height;
+}

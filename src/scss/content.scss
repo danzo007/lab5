@@ -1,0 +1,63 @@
+@import "mixin";
+
+content{
+    width: 100%;
+}
+
+.serch {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0, 0, 0, 0;
+    padding: 0 20px;
+  }
+
+  .filter {
+    @include font-size(2rem);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 100px;
+    margin-top: 50px;
+    @media all and (max-width: 768px) {
+        margin-left: 10px;
+    }
+  }
+
+  .serch-input {
+    margin-left: auto;
+    margin-right: 10px;
+    @media all and (max-width: 768px) {
+        margin-right: 0px;
+    }
+  }
+  .serch-input input {
+    @include font-size(1rem);
+    background-color: #2B475E;
+    color: #1C2838;
+    width: 320px;
+    height: 50px;
+    @media all and (max-width: 768px) {
+        width: 200px;
+        height: 30px;
+    }
+  }
+  .serch-input input::placeholder {
+    color: #1C2838;
+  }
+  .games {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    
+  }
+  .games img {
+    @include glow-on-hover;
+    width: 1000px;
+    height: 150px;
+    @media all and (max-width: 768px) {
+        width: 400px;
+        height: 50px;
+    }
+  }
